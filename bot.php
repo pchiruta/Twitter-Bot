@@ -1,8 +1,4 @@
 <?php
-/**
- * Twitter Auto Responder Bot
- * Based on 'Twitter Autoresponder Bot' by Daniel15 (https://gist.github.com/820281)
- */
 require '/oauth/twitteroauth.php';
 require '/config.php';
 class TwitterAutoResponder {
