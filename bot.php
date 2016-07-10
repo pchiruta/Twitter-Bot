@@ -43,8 +43,7 @@ class TwitterAutoResponder {
 		if(isset($term) && $term != ""){
 			echo 'Performing search for '.$term.'... ';
 			$search = $this->search($term, $since_id);
-			//Print_r($search);
-			//$search = $this->_connection->get('https://api.twitter.com/1.1/search/tweets.json?');
+			
 			echo 'Done, '.count($search->statuses).' results';
 			echo "\n";
 			// Store the max ID
@@ -79,10 +78,7 @@ class TwitterAutoResponder {
 		if(isset($user) && $user != ""){
 			echo 'Performing search for '.$user.'... ';
 			$search = $this->search_user($user);
-			//Print_r($search);
-			//$search = $this->_connection->get('https://api.twitter.com/1.1/search/tweets.json?');
-			//Print_r($search);
-			//file_put_contents("response.txt",$search,FILE_APPEND);
+			
 			$count = count($search);
 			echo 'Done, '.$count.' results';
 			echo "\n";
