@@ -38,14 +38,14 @@ elseif($action == "ur"){
 	$user = $argv[2];
 	$response = $argv[3];
 	echo "given arg1 is :".$action."\n";
-	//$conn->run("",$user,$response,"","");
+	$conn->run("",$user,$response,"","");
 }
 elseif($action == "urt"){
 	if(!isset($argv[2])) usage();
 	 $user = $argv[2];
 	 $retweet = "true";
 	 echo "given arg1 is :".$action."\n";
-	 //$conn->run("",$user,"",$retweet,"");
+	 $conn->run("",$user,"",$retweet,"");
 }elseif($action == "uf"){
 	if(!isset($argv[2])) usage();
 	$user = $argv[2];
